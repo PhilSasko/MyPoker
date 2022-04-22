@@ -5,6 +5,10 @@ VisualStudioVersion = 17.1.32210.238
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyPoker.Wpf", "MyPoker.Wpf\MyPoker.Wpf.csproj", "{CCC307A7-9743-4B87-A2D9-468AAACF7A88}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyPoker.PokerLogic", "MyPoker.PokerLogic\MyPoker.PokerLogic.csproj", "{FBCF56C1-7C08-4076-976C-CFF4AEA4CED9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyPoker.PokerLogic.Tests", "MyPoker.PokerLogic.Tests\MyPoker.PokerLogic.Tests.csproj", "{EB5EBE4B-B965-43A2-82C3-E55BCE6B2EED}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{CCC307A7-9743-4B87-A2D9-468AAACF7A88}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CCC307A7-9743-4B87-A2D9-468AAACF7A88}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CCC307A7-9743-4B87-A2D9-468AAACF7A88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBCF56C1-7C08-4076-976C-CFF4AEA4CED9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBCF56C1-7C08-4076-976C-CFF4AEA4CED9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBCF56C1-7C08-4076-976C-CFF4AEA4CED9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBCF56C1-7C08-4076-976C-CFF4AEA4CED9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB5EBE4B-B965-43A2-82C3-E55BCE6B2EED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB5EBE4B-B965-43A2-82C3-E55BCE6B2EED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB5EBE4B-B965-43A2-82C3-E55BCE6B2EED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB5EBE4B-B965-43A2-82C3-E55BCE6B2EED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
