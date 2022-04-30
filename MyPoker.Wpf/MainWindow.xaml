@@ -5,8 +5,63 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MyPoker.Wpf"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="MyPoker" Height="450" Width="800">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
 
+        <Grid Grid.Row="0" Margin="40,10,40,10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+
+            <Rectangle Grid.Column="0" x:Name="tableRectFirst" Stroke="Black" Width="120" />
+            <Label Grid.Column="0" x:Name="tableValueFirst" Content="Val1" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,58,0,0" VerticalAlignment="Top"/>
+            <Label Grid.Column="0" x:Name="tableSuitFirst" Content="Suit1" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,115,0,0" VerticalAlignment="Top"/>
+
+            <Rectangle Grid.Column="1" x:Name="tableRectSecond" Stroke="Black" Width="120" />
+            <Label Grid.Column="1" x:Name="tableValueSecond" Content="Val2" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,58,0,0" VerticalAlignment="Top"/>
+            <Label Grid.Column="1" x:Name="tableSuitSecond" Content="Suit2" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,115,0,0" VerticalAlignment="Top"/>
+
+            <Rectangle Grid.Column="2" x:Name="tableRectThird" Stroke="Black" Width="120" />
+            <Label Grid.Column="2" x:Name="tableValueThird" Content="Val3" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,58,0,0" VerticalAlignment="Top"/>
+            <Label Grid.Column="2" x:Name="tableSuitThird" Content="Suit3" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,115,0,0" VerticalAlignment="Top"/>
+
+            <Rectangle Grid.Column="3" x:Name="tableRectFourth" Stroke="Black" Width="120" />
+            <Label Grid.Column="3" x:Name="tableValueFourth" Content="?" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,58,0,0" VerticalAlignment="Top"/>
+            <Label Grid.Column="3" x:Name="tableSuitFourth" Content="?" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,115,0,0" VerticalAlignment="Top"/>
+
+            <Rectangle Grid.Column="4" x:Name="tableRectFifth" Stroke="Black" Width="120" />
+            <Label Grid.Column="4" x:Name="tableValueFifth" Content="?" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,58,0,0" VerticalAlignment="Top"/>
+            <Label Grid.Column="4" x:Name="tableSuitFifth" Content="?" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,115,0,0" VerticalAlignment="Top"/>
+        </Grid>
+
+        <Grid Grid.Row="1" Width="300" Margin='0,10,0,10'>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Rectangle Grid.Column="0" x:Name="playerRectFirst" Stroke="Black" Width="120" Margin="15,0,15,0" />
+            <Rectangle Grid.Column="1" x:Name="playerRectSecond" Stroke="Black" Width="120" Margin="15,0,15,0" />
+            <!--left card-->
+            <Label Grid.Column="0" x:Name="playerValueFirst" Content="Val1" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,58,0,0" VerticalAlignment="Top"/>
+            <Label Grid.Column="0" x:Name="playerSuitFirst" Content="Suit1" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,115,0,0" VerticalAlignment="Top"/>
+            <!--right card-->
+            <Label Grid.Column="1" x:Name="playerValueSecond" Content="Val2" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,58,0,0" VerticalAlignment="Top"/>
+            <Label Grid.Column="1" x:Name="playerSuitSecond" Content="Suit2" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,115,0,0" VerticalAlignment="Top"/>
+            
+        </Grid>
+        
+        <Label Grid.Row="1" Margin="640,90,10,63" 
+               x:Name="rankingLabel" Content="Ranking" 
+               HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="18" />
+        
+        <Button Grid.Row="1" Margin="640,157,10,10" Content="Action" Click="GameNextActionButton_Click" />
     </Grid>
 </Window>
